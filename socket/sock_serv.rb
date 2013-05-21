@@ -1,5 +1,5 @@
 require 'socket'
-portnumber = 2000
+portnumber = 2001
 socketServer = TCPServer.open(portnumber)
 
 while true
@@ -21,7 +21,8 @@ while true
           connection.close
           break
         else
-          connection.puts "MSH|^~\\&|CPL|CPL|CBL|CBL|TODAYSDATE||||GUID#{28.chr}"
+          connection.puts "MSH|^~\\&|CPL|CPL|CBL|CBL|TODAYSDATE||||GUID
+MSA|AA|YEY#{28.chr}"
           connection.flush
         end
       end
