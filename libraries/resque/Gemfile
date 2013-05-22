@@ -1,4 +1,4 @@
 source 'http://rubygems.org'
 
-gem 'resque', :git => 'git@github.com:resque/resque.git'
-
+gem 'resque'
+gem 'json', '~> 1.7.7'

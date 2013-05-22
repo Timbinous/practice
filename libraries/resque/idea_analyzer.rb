@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require 'resque'
 require_relative 'word_analyzer'
 module Rickshaw
